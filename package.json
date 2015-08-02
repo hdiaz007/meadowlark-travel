@@ -2,7 +2,7 @@
   "name": "meadowlark",
   "version": "1.0.0",
   "description": "meadowlark travel tutorial",
-  "main": "meadowlark.js",
+  "main": "app.js",
   "scripts": {
     "test": "make test"
   },
@@ -11,5 +11,9 @@
   "dependencies": {
     "express": "^4.13.1",
     "express3-handlebars": "^0.5.2"
+  },
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
   }
 }

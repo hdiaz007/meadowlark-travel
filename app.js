@@ -1,3 +1,5 @@
+/* global process */
+/* global __dirname */
 var express = require('express');
 var fortune = require('./lib/fortune.js');
 var app = express();
@@ -11,6 +13,12 @@ app.set('view engine', 'handlebars');
 app.set('port', process.env.port || 3000);
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(function(req, res, next) {
+	res.locals.showTests = app.get(' env') !== 'production' &&     
+     req.query.test === '1'; 
+	 next(); 
+}); 
 
 app.get('/', function(req,res){
 	res.render('home');
