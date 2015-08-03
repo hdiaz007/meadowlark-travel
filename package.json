@@ -4,16 +4,20 @@
   "description": "meadowlark travel tutorial",
   "main": "app.js",
   "scripts": {
-    "test": "make test"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hdiaz007/meadowlark-travel.git"
   },
   "author": "Henry Diaz",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.13.1",
-    "express3-handlebars": "^0.5.2"
+    "express": "~4.4.2",
+    "express3-handlebars": "~0.5.0",
+    "chai": "~1.9.1"
   },
   "devDependencies": {
-    "chai": "^3.2.0",
-    "mocha": "^2.2.5"
+    "mocha": "~1.20.1"
   }
 }
